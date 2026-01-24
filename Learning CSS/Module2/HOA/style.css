@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.site-header {
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://edube.org/uploads/media/default/0001/04/portfolio.jpg') center/cover no-repeat;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #ddd;
+    font-size: 16px;
+}
+
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Centered card */
+.center {
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: hsl(210, 100%, 35%);
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Links */
+a {
+    color: #1e40af;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc2626;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #1e40af;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #dc2626;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1f2933;
+    color: #ccc;
+    font-size: 14px;
+}
