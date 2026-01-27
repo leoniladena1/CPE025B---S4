@@ -1,0 +1,138 @@
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9fafb;   /* very light gray */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #eaf2ff;   /* light blue */
+    color: #1e3a8a;
+    border-bottom: 1px solid #dbeafe;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-top: 5px;
+    color: #475569;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 12px 18px;
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #eaf2ff;
+}
+
+/* ===== Columns (Blog Cards) ===== */
+.column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.column h2 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+.column p {
+    color: #475569;
+}
+
+.column a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* ===== Post ===== */
+.post img {
+    float: left;
+    width: 50%;
+    margin: 0 15px 10px 0;
+    border-radius: 8px;
+}
+
+.post p {
+    color: #475569;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #f1f5f9;
+    color: #475569;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* ===== Clearfix ===== */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    nav li {
+        float: none;
+        text-align: center;
+    }
+
+    .post img {
+        width: 100%;
+        float: none;
+        margin: 0 0 15px 0;
+    }
+}
