@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Program Survey Form </title>
+        <meta name = "Author" content= "Leonil Adena">
+        <meta name = "Description" content = "Survey Form about the program" >
+        <meta charset= "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <h1> Program Survey Form  </h1>
+            <p id ="description" style = "font-size:20px;"> Please answer this survey with honesty.</p>
+        </header>
+
+
+        <!-- Form for user details -->
+        <section>
+            <div>
+            <form id = "survey-form">
+                <label for = "name"> <strong>Username: </strong></label>
+                <input class = "textbox" name = "name" id = "name" type = "text" placeholder="surname, firstname" required>
+                <br>
+                <label for = "email"><strong>Email: </strong></label>
+                <input class = "textbox" name = "email" id = "email" type = "email" placeholder="example@gmail.com" required>
+                <br>
+                <label for = "ID"> <strong>ID Number: </strong> </label>
+                <input class = "textbox" min = "1" max = "100" name = "ID" id = "ID" type = "number" placeholder="number" required>
+                <br>
+
+                <hr>
+
+            <!-- For for user survey-->
+                <p> <strong>How would you rate the entire program? </strong>
+                <select>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                </select>
+                 </p>
+
+                 <hr>
+
+
+            <!-- Radio button -->
+                <p> <strong>Did you enjoy it?</strong>
+                <br>
+                <input type = "radio" id = "yes" name = "Enjoyed/Not" value = "yes">
+                <label for = "radio"> yes </label>
+                <br>
+                <input type = "radio" id = "no" name = "Enjoyed/Not" value = "no">
+                <label for = "radio"> no </label>
+                <br>
+                </p>
+                <hr>
+
+            <!-- Check Boxes -->
+                <p> <strong>What feature/s did you liked the most?</strong> </p>
+                <input type = "checkbox" id = "relatable" name = "feature">
+                <label for = "radio"> The program was relatable</label>
+                <br>
+                <input type = "checkbox" id = "hosts" name = "feature">
+                <label for = "radio"> The hosts were fun to listen to</label>
+                <br>
+                <input type = "checkbox" id = "lesson" name = "feature">
+                <label for = "radio"> I've learned a lot from the program</label>
+                <br>
+                <input type = "checkbox" id = "enjoyed" name = "feature">
+                <label for = "radio"> I never got bored while listening</label>
+                <br>
+                <input type = "checkbox" id = "design" name = "feature">
+                <label for = "radio"> The program design was very presentable</label>
+                <br>
+                <hr>
+
+            <!-- Textarea -->
+
+                <p> <strong>Suggestion/Comments:</strong> </p>
+                <textarea > </textarea>
+                <br>
+
+            <!-- Submit -->
+                <button id = "submit" type = "submit"> SUBMIT </button>
+     
+            </form>
+            </div>
+        </section>
+
+    </body>
+</html>
