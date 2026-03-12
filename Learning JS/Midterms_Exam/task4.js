@@ -12,8 +12,8 @@ function power(base, exp) {
     }  else {
         return base * power(base, exp - 1); 
         }
-
 }
+
 // Test Code
 console.log(power(2, 5));
 console.log(power(2, -2));

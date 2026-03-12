@@ -1,15 +1,19 @@
-function sumDeepStrictNumbers(arr) {
-    let sum = 0;
-    for (let i; i <= arr.length ; i++){
-        if (Array.isArray(arr[i])){
-            sum += sumDeepStricNumbers(arr[i]);
-        } else if (typeof arr[i] === "number" && !isNaN(arr[i])){
-            sum+= sum;
-        }
+class ValidationError extends Error {
+    constructor(fields) {
+        super();
+        this.fields = fields;
     }
-    return sum;
+}
+
+function validateSchema(data, schema) {
+    // Code Here
+}
+
+function safeValidate(data, schema) {
+    // Code Here
 }
 
 // Test Code
-const testArray1 = [10, ['5', [true, 5]], null, [undefined, [10, NaN]]];
-console.log(sumDeepStrictNumbers(testArray1));
+const userSchema = { name: 'string', age: 'number', active: 'boolean' };
+const userData = { name: 'Alice', age: 'thirty', active: 1 };
+console.log(safeValidate(userData, userSchema));
